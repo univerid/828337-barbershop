@@ -35,7 +35,7 @@
       <section class="catalog-filter">
         <form action="#" method="post" enctype="multipart/form-data">
           <div class="catalog-filter-vendors">
-            <h2 class="catalog-filter-title">Производители:</h2>
+            <p class="catalog-filter-name">Производители:</p>
             <input type="checkbox" name="baxter" id="baxter-field" checked><label for="baxter-field">Baxter of California</label><br>
             <input type="checkbox" name="mr-natty" id="mr-natty-field"><label for="mr-natty-field">Mr Natty</label><br>
             <input type="checkbox" name="suavecito" id="suavecito-field" checked><label for="suavecito-field">Suavecito</label><br>
@@ -45,19 +45,16 @@
           </div>
 
           <div class="catalog-filter-product-groups">
-            <label>
-              <h2 class="catalog-filter-title">Группы товаров:</h2>
-              <input type="radio" name="product-groups" id="shaving">Бритвенные<br> принадлежности<br>
-              <input type="radio" name="product-groups" id="care-products">Средства для ухода<br>
-              <input type="radio" name="product-groups" id="accessories">Аксессуары
-            </label>
+            <p class="catalog-filter-name">Группы товаров:</p><br>
+            <input type="radio" name="product-groups" id="shaving">Бритвенные<br> принадлежности<br>
+            <input type="radio" name="product-groups" id="care-products">Средства для ухода<br>
+            <input type="radio" name="product-groups" id="accessories">Аксессуары<br>
             <input class="button" type="submit" value="Показать">
           </div>
         </form>
       </section>
 
       <section class="catalog-products">
-        <h3 class="visually-hidden">Товары</h3>
         <section class="catalog-item">
           <a class="catalog-item-pic">
             <img src="img/item.svg" width="50" height="50" alt="Набор для путешествий «Baxter of California»">
@@ -65,14 +62,14 @@
           <a class="catalog-item-name"><strong>Набор для путешествий «Baxter of California»</strong></a>
           <p class="catalog-item-price">
             <b>2 900 р.</b>
-            <input class="button" "catalog-item-button" type="button" value="Купить">
+            <input class="button catalog-item-button" type="button" value="Купить">
           </p>
         </section>
         <div>
-          <input class="button" "catalog-page-button" type="button" value="1">
-          <input class="button" "catalog-page-button" type="button" value="2">
-          <input class="button" "catalog-page-button" type="button" value="3">
-          <input class="button" "catalog-page-button" type="button" value="4">
+          <input class="button catalog-page-button" type="button" value="1">
+          <input class="button catalog-page-button" type="button" value="2">
+          <input class="button catalog-page-button" type="button" value="3">
+          <input class="button catalog-page-button" type="button" value="4">
         </div>
       </section>
     </main>
@@ -92,6 +89,6 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
-    </footer
+    </footer>
   </body>
 </html>

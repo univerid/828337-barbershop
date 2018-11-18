@@ -7,14 +7,14 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="50" height="20" alt="Логотип Барбершопа Бородинский">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -23,16 +23,15 @@
       </nav>
     </header>
 
-    <main>
-      <h1 class="care-products-title">Средства для ухода</h1>
-      <nav class="breadcrumbs">
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li>Средства для ухода</li>
-        </ul>
-      </nav>
-      <section class="catalog-filter">
+    <main class="container">
+      <h1 class="page-title">Средства для ухода</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li class="breadcrumbs-current">Средства для ухода</li>
+      </ul>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="#" method="post" enctype="multipart/form-data">
           <div class="catalog-filter-vendors">
             <p class="catalog-filter-name">Производители:</p>
@@ -54,23 +53,34 @@
         </form>
       </section>
 
-      <section class="catalog-products">
-        <section class="catalog-item">
-          <a class="catalog-item-pic">
-            <img src="img/item.svg" width="50" height="50" alt="Набор для путешествий «Baxter of California»">
-          </a>
-          <a class="catalog-item-name"><strong>Набор для путешествий «Baxter of California»</strong></a>
-          <p class="catalog-item-price">
-            <b>2 900 р.</b>
-            <input class="button catalog-item-button" type="button" value="Купить">
-          </p>
-        </section>
-        <div>
-          <input class="button catalog-page-button" type="button" value="1">
-          <input class="button catalog-page-button" type="button" value="2">
-          <input class="button catalog-page-button" type="button" value="3">
-          <input class="button catalog-page-button" type="button" value="4">
-        </div>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список средств для ухода</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-category">Набор для путешествий</span>
+                <span class="catalog-item-title">«Baxter of California»</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>2 900 р.</b>
+              <a class="button" href="#">Купить</a>
+            </p>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item pagination-item-current"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+        </ul>
+
       </section>
     </main>
 
@@ -90,5 +100,11 @@
         </ul>
       </div>
     </footer>
+    <section class="madal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <!--Здесь будет форма -->
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>

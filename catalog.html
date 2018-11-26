@@ -2,29 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Барбершоп «Бородинский»</title>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="price.html">Прайс-лист</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
+          <li class="login-link">Вход
+            <a class="login-link" href="login.html">
+              Вход
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="page-title">Cредства для ухода</h1>
-
+      <h2 class="visually-hidden">Навигационная цепочка</h2>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Магазин</a></li>
@@ -32,7 +36,41 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="catalog-filter-vendors">
+            <h3 class="catalog-filter-name">Производители:</h3>
+            <p>
+              <input type="checkbox" name="baxter" id="baxter-field" checked>
+              <label for="baxter-field">Baxter of California</label><br>
+              <input type="checkbox" name="mr-natty" id="mr-natty-field">
+              <label for="mr-natty-field">Mr Natty</label><br>
+              <input type="checkbox" name="suavecito" id="suavecito-field" checked>
+              <label for="suavecito-field">Suavecito</label><br>
+              <input type="checkbox" name="malin-goetz" id="malin-goetz-field">
+              <label for="malin-goetz-field">Malin+Goetz</label><br>
+              <input type="checkbox" name="murrays" id="murrays-field">
+              <label for="murrays-field">Murray’s</label><br>
+              <input type="checkbox" name="american-crew" id="american-crew-field" checked>
+              <label for="american-crew-field">American Crew</label>
+            </p>
+          </div>
+          <div class="catalog-filter-product-groups">
+            <h3 class="catalog-filter-name">Группы товаров:</h3>
+            <p>
+              <label>
+                <input type="radio" name="product-groups" value="shaving">Бритвенные<br>принадлежности
+              </label><br>
+              <label>
+                <input type="radio" name="product-groups" value="care-products">Средства для ухода
+              </label><br>
+              <label>
+                <input type="radio" name="product-groups" value="accessories">Аксессуары
+              </label>
+            </p>
+            <button class="button" type="submit">Показать</button>
+          </div>
+        </form>
       </section>
 
       <section class="catalog">
@@ -141,6 +179,7 @@
             </p>
           </li>
         </ul>
+        <h3 class="visually-hidden">Навигация по страницам списка товаров</h3>
         <ul class="pagination-list">
           <li class="pagination-item"><a href="#">1</a></li>
           <li class="pagination-item pagination-item-current"><a>2</a></li>
@@ -169,11 +208,5 @@
       </p>
     </footer>
 
-    <section class="modal modal-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
   </body>
 </html>
